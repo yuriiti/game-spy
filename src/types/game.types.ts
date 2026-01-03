@@ -10,7 +10,15 @@ export type WordCategory =
   | "cities"
   | "professions"
   | "objects"
-  | "food";
+  | "food"
+  | "drinks"
+  | "smoking"
+  | "entertainment"
+  | "relationships"
+  | "games"
+  | "hobbies"
+  | "holidays"
+  | "sports";
 
 export interface Player {
   id: string;

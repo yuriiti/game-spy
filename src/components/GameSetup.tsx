@@ -31,6 +31,14 @@ const CATEGORIES: WordCategory[] = [
   "professions",
   "objects",
   "food",
+  "drinks",
+  "smoking",
+  "entertainment",
+  "relationships",
+  "games",
+  "hobbies",
+  "holidays",
+  "sports",
 ];
 
 export default function GameSetup({ onStartGame }: GameSetupProps) {

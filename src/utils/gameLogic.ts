@@ -261,6 +261,14 @@ export function getCategoryDisplayName(category: WordCategory): string {
     professions: "Профессии",
     objects: "Предметы",
     food: "Еда",
+    drinks: "Напитки",
+    smoking: "Курение",
+    entertainment: "Развлечения",
+    relationships: "Отношения",
+    games: "Игры",
+    hobbies: "Хобби",
+    holidays: "Праздники",
+    sports: "Спорт",
   };
   return categoryNames[category];
 }
