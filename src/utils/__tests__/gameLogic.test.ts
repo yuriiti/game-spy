@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { describe, it, expect } from "vitest";
 import {
   generatePlayerId,
   assignRoles,
@@ -11,7 +11,12 @@ import {
   checkWinCondition,
   getCategoryDisplayName,
 } from "../gameLogic";
-import { Player, GameSettings, WordCategory, VotingState } from "../../types/game.types";
+import {
+  Player,
+  GameSettings,
+  WordCategory,
+  VotingState,
+} from "../../types/game.types";
 import wordsData from "../../data/words.json";
 
 describe("gameLogic", () => {
@@ -100,7 +105,9 @@ describe("gameLogic", () => {
     });
 
     it("should throw error for empty categories", () => {
-      expect(() => selectRandomWord([])).toThrow("Не выбрано ни одной категории");
+      expect(() => selectRandomWord([])).toThrow(
+        "Не выбрано ни одной категории"
+      );
     });
   });
 
@@ -345,4 +352,3 @@ describe("gameLogic", () => {
     });
   });
 });
-
